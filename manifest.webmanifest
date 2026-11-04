@@ -1,0 +1,9 @@
+{
+  "name": "Taskly",
+  "short_name": "Taskly",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f8f5",
+  "theme_color": "#f7f8f5",
+  "icons": []
+}
