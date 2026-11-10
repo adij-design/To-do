@@ -212,5 +212,19 @@ lucide-react/dist/esm/lucide-react.mjs:
    *)
 */
 </script>
+<script>
+  // Shared timetable source for the college workspace. Publish the sheet to the web
+  // or expose a server-side read endpoint before enabling live sync in production.
+  window.TASKLY_TIMETABLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1OmZzaFWnjw9upQ46ykN2cOVT7e2X-N1j/edit?gid=1529852829#gid=1529852829';
+  window.TASKLY_TIMETABLE_SHEET_ID = '1OmZzaFWnjw9upQ46ykN2cOVT7e2X-N1j';
+  window.TASKLY_TIMETABLE_GID = '1529852829';
+  document.querySelectorAll('textarea').forEach((field) => {
+    field.maxLength = 5000;
+    field.rows = Math.max(field.rows || 1, 6);
+    field.style.minHeight = '128px';
+    field.style.resize = 'vertical';
+    field.setAttribute('aria-label', field.getAttribute('aria-label') || 'Daily thought or notes');
+  });
+</script>
 </body>
 </html>
